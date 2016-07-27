@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/styles.css">
+  <style type="text/css">
+   
+   .text-document pre {
+       background-color: #000000;
+   }
+
+   .text-document code {
+       color: #FFFFFF;
+   }
+
+   div.text-document::before {
+       content: attr(title);
+       font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+       font-size: 14px;
+       color: #000000;
+       background: #C0C0C0;
+       padding:8px 15px;
+       border-radius:5px 5px 0px 0px;
+       border:1px solid #e5e5e5;
+       display: block;
+   }
+   
+   .text-document pre {
+       border-radius: 0px 0px 5px 5px;
+   }
+
+
+   .input pre {
+       background-color: #EBECE4;
+   }
+   
+   .output pre {
+       background-color: #ECECC7;
+   }
+   
+  </style>
+</head>

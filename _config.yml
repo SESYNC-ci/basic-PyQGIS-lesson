@@ -1,0 +1,7 @@
+baseurl: '/basic-PyQGIS-lesson'
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: 'default'
