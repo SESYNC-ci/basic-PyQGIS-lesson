@@ -1,16 +1,9 @@
 ---
 ---
 
-# Scripting Geospatial Analysis
-
-Instructor: Ian Carroll
-
-
 ## Objectives for this Lesson
 
 ## Specific Achievements
-
-
 
 ## QGIS
 
